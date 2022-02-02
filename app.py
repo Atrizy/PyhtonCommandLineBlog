@@ -1,5 +1,6 @@
 from unittest import result
 import newpost as n
+import grabPosts as g
 
 selection = input(f"1: Write a new entry or 2: See all posting: ")
 
@@ -10,3 +11,6 @@ if selection == '1':
     n.add_new_post(post_content, username)
     print("Blog posted!")
     exit()
+
+if selection == '2':
+    g.grab_posts()
